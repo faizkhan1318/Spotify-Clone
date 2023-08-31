@@ -8,7 +8,7 @@ body,
 html {
     height: 100%;
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
@@ -20,6 +20,10 @@ html {
     display: flex;
     overflow-y: hidden;
     background-color: #000;
+}
+
+.container ::-webkit-scrollbar {
+    display: none;
 }
 
 .logo {
@@ -38,9 +42,9 @@ html {
 }
 
 .sidebar {
-    /* flex: 0.2; */
+    /* flex: 0.3; */
     width: 280px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     background-color: #000;
     position: sticky;
     height: 100vh;
@@ -69,7 +73,7 @@ html {
 .app>img {
     height: 25px;
     width: 25px;
-    
+
 }
 
 .link-flex>a {
@@ -106,8 +110,10 @@ html {
     display: flex;
     align-items: center;
     gap: 15px;
+    /* position: absolute; */
     margin-left: 20px;
     margin-top: 30px;
+    /* bottom: 98px; */
 
 }
 
@@ -122,6 +128,7 @@ html {
 
 .main-content {
     width: 100%;
+    /* flex: 1.5; */
     background-color: #202020;
     overflow-y: auto;
     padding-bottom: 95px;
@@ -219,6 +226,11 @@ html {
     margin-top: 20px;
     background-color: #181818;
     cursor: pointer;
+    transition: all 1s ease;
+}
+.card:hover{
+    width: 20%;
+    height: 20%;
 }
 
 .card>img {
@@ -334,3 +346,4 @@ html {
     font-size: 15px;
     font-family: "DM Sans", sans-serif;
 }
+

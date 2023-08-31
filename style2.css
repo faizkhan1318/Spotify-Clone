@@ -80,15 +80,19 @@ html {
     margin-bottom: 5px;
 }
 .playlist-image{
-    padding-top: 50px;
+    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 98px;
 }
 .playlist-image>img{
     width: 200px;
     height: 200px;
 }
+
+
 /* Playlist Styles */
 .main-content {
     width: 100%;
@@ -103,6 +107,7 @@ html {
     top: 0;
     z-index: 10000;
     padding-top: 40px;
+    
 }
 .playlist-nav{
     display: flex;
@@ -125,7 +130,7 @@ html {
 .genre-short-text{
     color: #FFF;
     font-size: 12px;
-    opacity: 0.699999988079071;
+    opacity: 0.6;
 }
 
 .second-top {
@@ -136,7 +141,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 9.6rem;
+    width: 9.5rem;
 }
 
 .top-third {
@@ -168,13 +173,14 @@ html {
     width: 100%;
     overflow-x: auto;
     overflow-y: scroll;
-    height: 47%;
-    padding-bottom: 75px;
+    height: 47%; 
+    padding-bottom: 80px;
 }
 .table-wrapper::-webkit-scrollbar {
     display: none;
   }
 /* Table Styling */
+
 .custom-table {
     width: 100%;
     border-collapse: collapse;
